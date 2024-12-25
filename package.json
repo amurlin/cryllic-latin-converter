@@ -1,11 +1,12 @@
 {
   "name": "cyrillic-latin-converter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "node.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["cyrillic", "latin", "converter"],
   "author": "",
   "license": "ISC",
   "description": ""

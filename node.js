@@ -90,6 +90,10 @@ export function latinToCyrillic(text) {
     Yu: "Ю",
     Shts: "Щ",
     Ii: "Ий",
+    Ei: "Эй",
+    Ai:"Ай",
+    Oi:"Ой",
+    Ui:"Уй",
     A: "А",
     B: "Б",
     C: "С",
@@ -127,6 +131,10 @@ export function latinToCyrillic(text) {
     yu: "ю",
     shts: "щ",
     ii: "ий",
+    ei: "эй",
+    ai:"ай",
+    oi:"ой",
+    ui:"уй",
     a: "а",
     b: "б",
     d: "д",
@@ -154,34 +162,13 @@ export function latinToCyrillic(text) {
     z: "з",
   };
 
-  const arr = [10, 20, 30];
-
-  //   for (let number of arr) [console.log(number)];
-
-  //   for (let i = 0; i < arr.length; i++) {
-  //     let number = arr[i];
-  //   }
-
-  //   console.log(Object.entries(map));
-
-  //
   let result = text;
   for (let [latin, cyrillic] of Object.entries(map)) {
-    // console.log(latin, cyrillic);
-    // console.log(result, "---", latin);
-    // console.log(result.split(latin));
     result = result.split(latin).join(cyrillic);
   }
   return result;
 }
 
-//  function cyrillic(text) {
-//     const map = {
-//         сх:'ш', кх:'х', цх:'ч', йа:'я', йэ:'е', йо:'ё', йу:'ю', схтс:'щ'
-//     };
-//     return text.split('').map(char => map[char] || char).join('');
-// };
-
 console.log(cyrillicToLatin("Сайн уу?, уул"));
 console.log(latinToCyrillic("shagai, yargui"));
-// console.log(cyrillic("йаргуй"));
+
